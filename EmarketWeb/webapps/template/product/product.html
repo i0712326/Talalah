@@ -1,0 +1,21 @@
+<div>
+	<div class="thumbnail item">
+		<!-- <img src="/EmarketWeb/css/item/{{merchant.merchantCode.mcc}}/{{merchant.mcId}}/{{id}}/{{img}}" alt=""> -->
+		<img src="/EmarketWeb/content/{{merchant.merchantCode.mcc}}/{{merchant.mcId}}/{{id}}/{{img}}" alt="Product {{name}}"/>
+		<div class="caption">
+			<h5><strong>Product ID: </strong>{{id}} </h5>
+			<h4 class="pull-right">${{price}}</h4>
+			<h4>
+				<a href="#">{{name}}</a>
+			</h4>
+			<p>
+				{{shDes}}
+			</p>
+		</div>
+		<div class="ratings">
+			<p class="pull-right">{{review}} reviews</p>
+			<p>Rate : <span class="glyphicon glyphicon-star"> </span> {{rate}} </p>
+		</div>
+	</div>
+	
+</div>

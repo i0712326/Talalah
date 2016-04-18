@@ -1,0 +1,43 @@
+@CHARSET "ISO-8859-1";
+/* Log on Style Sheet */
+.logon-signup{
+	margin-top:20px;
+	width : 650px;
+	box-shadow: 5px 5px 3px #888;
+	border-radius:4px;
+	border-top:1px solid #CCC;
+}
+
+#logonform p {
+	margin-top:15px;
+}
+
+#logonform #user-id{
+	margin-left:40px;
+}
+
+#loginSubmit{
+	margin-left:250px;
+}
+
+/* Sign Up Style Sheet */
+
+#email-block{
+	margin-left : 42px;
+}
+
+#tel-block{
+	margin-left:52px;
+}
+
+#passwd-block{
+	margin-left:5px;
+}
+
+#repasswd-block{
+	margin-left:14px;
+}
+
+#signup-btn{
+	margin-left:500px;
+}

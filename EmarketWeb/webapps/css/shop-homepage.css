@@ -1,0 +1,133 @@
+/*!
+ * Start Bootstrap - Shop Homepage HTML Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+}
+
+.slide-image {
+    width: 100%;
+}
+
+.carousel-holder {
+    margin-bottom: 30px;
+}
+
+.carousel-control,
+.item {
+    border-radius: 4px;
+}
+
+.caption {
+    height: 130px;
+    overflow: hidden;
+}
+
+.caption h4 {
+    white-space: nowrap;
+}
+
+.thumbnail img {
+    width: 100%;
+}
+
+.ratings {
+    padding-right: 10px;
+    padding-left: 10px;
+    color: #d17581;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+    color: #333;
+}
+
+.detail{
+	width:330px;
+	margin:10px;
+}
+
+.descr{
+	padding: 2px;
+	margin: 10px;
+	width: 340px;
+}
+.descr p{
+	padding:10px;
+}
+.social_group{
+	margin:10px;
+}
+
+.product_option {
+	margin-top:35px;
+}
+
+.product_option a{
+	margin-left:10px;
+	margin-right:10px;
+}
+.related{
+	float:left;
+	width: 80px;
+	height:100px;
+	margin:10px;
+	border:1px solid #CCC;
+	border-radius:3px;
+	background-color:#CCC;
+}
+
+h3.product-detail{
+ font-family: Impact, Charcoal, sans-serif;
+  font-size: 23px !important;
+  /*font-weight: bold;*/
+  color: #44707d;
+}
+
+/* search product style */
+
+.product-block{
+	border:1px solid #CCC;
+	margin:5px;
+	border-radius:4px;
+}
+
+.product-line{
+	padding:5px 5px 5px 50px;
+}
+
+.product-img{
+	padding-top : 10px;
+}
+
+#moreItems {
+	width  : 100%;
+	text-align : right;
+	font-size: 20px;
+	font-weight:600;
+	padding:15px;
+}
+
+#moreItems a:hover{
+	text-decoration : none;
+}
+
+
+/* advertisement */
+#advertise{
+	/* border : 1px solid #CCC;
+	background-color:#CCC;
+	height:500px; */
+}
+
+
+footer {
+    margin: 50px 0;
+}

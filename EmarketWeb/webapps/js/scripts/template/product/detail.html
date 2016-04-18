@@ -1,0 +1,123 @@
+<div class="container-fluid">
+	<h5 class="">
+	<a href="#Home">HOME</a>/<a href="#Home">{{merchant.merchantCode.mcc}}</a>/
+	<a href="#Home">{{transCodeCat.tcc}}</a>/<a href="#Home">{{merchant.mcId}}</a>/	{{id}}
+	</h5>
+	<div class="row social_group">
+		<div class="col-xs-8 col-md-8 detail">
+			<div>
+				<!-- <img name="thumb_picture" alt="" src="css/thumb/{{merchant.merchantCode.mcc}}/{{merchant.mcId}}/{{transCodeCat.tcc}}/{{thumb}}" width="" height=""> -->
+				<img name="thumb_picture" src="/EmarketWeb/content/{{merchant.merchantCode.mcc}}/{{merchant.mcId}}/{{id}}/{{img}}" alt="Product {{name}}"/>
+				<div class="product_option">
+					<a href="javascript:document.thumb_picture.src='css/img/related/images29.jpg'; void(0);">
+						<img alt="{{id}}/1" src="css/img/related/images29.jpg"  width="45" height="56" title="{{id}}/1"/>
+					</a>
+					<a href="javascript:document.thumb_picture.src='css/img/related/images34.jpg'; void(0);">
+						<img alt="{{id}}/2" src="css/img/related/images34.jpg"  width="45" height="56" title="{{id}}/2"/>
+					</a>
+					<a href="javascript:document.thumb_picture.src='css/img/related/images32.jpg'; void(0);">
+						<img alt="{{id}}/3" src="css/img/related/images32.jpg"  width="45" height="56" title="{{id}}/3"/>
+					</a>
+					<a href="javascript:document.thumb_picture.src='css/img/related/images33.jpg'; void(0);">
+						<img alt="{{id}}/4" src="css/img/related/images33.jpg" width="45" height="56" title="{{id}}/4"/>
+					</a>
+				</div>
+			</div>
+			<div class="detail_slide"></div>
+		</div>
+		<div class="col-xs-4 col-md-4 descr">
+			<h3>Product : {{name}}</h3>
+			<h3>Seller : {{name}}</h3>
+			<h4>ID : {{id}} </h4>
+			<p> <strong> COLOR : </strong><input type="color"/></p>
+			<p> <strong> SIZE : </strong>
+				<select id="itemSize">
+					<option value="S">S</option>
+					<option value="M">M</option>
+					<option value="L">L</option>
+				</select>
+			</p>
+			<p> <strong> QUANTITY : </strong><input type="text" value="1" id="quantity" size="5"/> </p>
+			<p> <strong> STOCK : </strong> 4 </p>
+			<hr/>
+			<h3>Price : <strong>{{price}}</strong> USD</h3>
+			<div class="btn-group" role="group">
+				<button type="button" class="btn btn-default">Add to Cart</button>
+				<button type="button" class="btn btn-default">Buy it Now</button>
+			</div>
+			<div class="social_group">
+				<a target="_blank" title="follow me on facebook" href="http://www.facebook.com/PLACEHOLDER">
+					<img alt="follow me on facebook" src="css/img/social/facebook30x30.png" border=0>
+				</a>
+				<a target="_blank" title="follow me on instagram" href="http://www.instagram.com/PLACEHOLDER">
+					<img alt="follow me on instagram" src="css/img/social/instagram30x30.png" border=0>
+				</a>
+				<a target="_blank" title="follow me on google plus" href="https://www.twitter.com/PLACEHOLDER">
+					<img alt="follow me on google plus" src="css/img/social/twiiter30x30.png" border=0>
+				</a>
+				<a target="_blank" title="follow me on pinterest" href="http://www.pinterest.com/PLACEHOLDER">
+				<img alt="follow me on pinterest" src="css/img/social/pinterest30x30.png" border=0></a>
+			</div>
+			<p>
+				{{shDes}}
+			</p>
+		</div>
+	</div>
+	
+	<div class="row social_group">
+		<div class="col-xs-8 col-md-8">
+			<ul class="nav nav-tabs">
+				<li class="active"><a data-toggle="tab"  href="#Feature">Feature</a></li>
+				<li><a data-toggle="tab" href="#Seller">Seller</a></li>
+				<li><a data-toggle="tab" href="#Reviews">Reviews</a></li>
+				<li><a data-toggle="tab" href="#Delivery">Delivery</a></li>
+			</ul>
+
+			<div class="tab-content">
+				<div id="Feature" class="tab-pane fade in active">
+					<h3>FEATURE</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+						sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+				<div id="Seller" class="tab-pane fade">
+					<h3>MERCHANT</h3>
+					<p>Ut enim ad minim veniam, quis nostrud exercitation ullamco
+						laboris nisi ut aliquip ex ea commodo consequat.</p>
+				</div>
+				<div id="Reviews" class="tab-pane fade">
+					<h3>REVIEWS</h3>
+					<p>Sed ut perspiciatis unde omnis iste natus error sit
+						voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+				</div>
+				<div id="Delivery" class="tab-pane fade">
+					<h3>DELIVERY</h3>
+					<p>Eaque ipsa quae ab illo inventore veritatis et quasi
+						architecto beatae vitae dicta sunt explicabo.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-4 col-md-4">
+			<h3>Related Items</h3>
+			<hr/>
+			<div id="related_items">
+				<div class="related">
+					<img alt="" src="css/img/related/images1.jpg" width="78" height="109"/>
+				</div>
+				<div class="related">
+					<img alt="" src="css/img/related/images2.jpg" width="78" height="109"/>
+				</div>
+				<div class="related">
+					<img alt="" src="css/img/related/images3.jpg" width="78" height="109"/>
+				</div>
+				<div class="related">
+					<img alt="" src="css/img/related/images4.jpg" width="78" height="109"/>
+				</div>
+				<div class="related">
+					<img alt="" src="css/img/related/images5.jpg" width="78" height="109"/>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	
+</div>

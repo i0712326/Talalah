@@ -1,0 +1,51 @@
+<div class="">
+	<div class="row mcInfo">
+		<div class="col-sm-4 col-lg-4 col-md-4 photoOrLogo">
+			<img id="mcIg" src="http://placehold.it/200x240" alt="merchant image" width="200" height="240" />
+		</div>
+		<div class="col-sm-4 col-lg-4 col-md-4 mcProfile">
+			<p>
+				<strong>MERCHANT ID : </strong> {{mc.mcId}}
+			</p>
+			<p>
+				<strong>STORE NAME : </strong> {{mc.name}}
+			</p>
+			<p>
+				<strong>ADDRESS : </strong> {{mc.address.street}}, {{mc.address.ville}}, {{mc.address.distr}},{{mc.address.provi}}
+			</p>
+			<p>
+				<strong>EMAIL : </strong> {{mc.email}}
+			</p>
+			<p>
+				<strong>TEL : </strong> {{mc.tel}}
+			</p>
+			<p>	<strong>FAX : </strong> {{mc.fax}}
+			<p>
+				<strong>URL : </strong> {{mc.url}}
+			</p>
+			<p>
+				<strong>DESCRIPTION :</strong> {{mc.merchantCode.mcc}}
+			</p>
+		</div>
+		<div class="col-sm-4 col-lg-4 col-md-4 prodAndSale">
+			<h3>PRODUCT AND SALE</h3>
+			<p>
+				<strong> DATE : </strong> <input value=""/>
+			<p>
+				<strong>PRODUCT STOCK : </strong> {{ps.stock}}
+			</p>
+			<p>
+				<strong>SOLD PROUCT : </strong> {{ps.sold}}
+			</p>
+			<p>
+				<strong>TOTAL SALE : </strong> {{ps.sale}} USD
+			</p>
+			<p>
+				<strong>NEW ORDER : </strong> {{ps.order}}
+			</p>
+			<p>
+				<strong>PENDING ORDER : </strong> {{ps.pending}}
+			</p>
+		</div>
+	</div>
+</div>
