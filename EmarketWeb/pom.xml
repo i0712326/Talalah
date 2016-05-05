@@ -5,6 +5,15 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   <dependencies>
+  	<!-- Spring Rest Client -->
+  	
+  	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-web</artifactId>
+		<version>3.0.2.RELEASE</version>
+	</dependency>
+  	
+  	<!-- Restful Web Client -->
   	<dependency>
 		<groupId>org.codehaus.jackson</groupId>
 		<artifactId>jackson-mapper-asl</artifactId>
@@ -55,7 +64,6 @@
 		<artifactId>slf4j-log4j12</artifactId>
 		<version>1.7.5</version>
 	</dependency>
-	
 	
   </dependencies>
   <build>

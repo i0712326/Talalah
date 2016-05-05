@@ -43,7 +43,7 @@
                         <a href="#Contact">About Us</a>
                     </li>
                 </ul>
-				<form class="navbar-form navbar-right" action="#">
+				<form class="navbar-form navbar-right" action="#SearchProduct" method="get">
 					<div class="form-group">
 						<input type="text" class="form-control" placeholder="Search" size="40" id="itemSearchVal"/>
 					</div>

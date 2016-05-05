@@ -121,9 +121,9 @@
 
 				<div class="login-page">
 					<div class="form">
-						<form class="login-form">
-							<input type="text" placeholder="username" />
-							<input type="password" placeholder="password" />
+						<form class="login-form" action="login" method="POST">
+							<input type="text" name="email" placeholder="email" />
+							<input type="password" name="passwd" placeholder="password" />
 							<button>login</button>
 						</form>
 					</div>
@@ -132,7 +132,7 @@
 			<div role="tabpanel" class="tab-pane" id="signup">
 				<div class="login-page">
 					<div class="form">
-						<form class="register-form">
+						<form class="register-form" action="">
 								<input type="text" placeholder="name" /> <input type="password"
 									placeholder="password" /> <input type="text"
 									placeholder="email address" />

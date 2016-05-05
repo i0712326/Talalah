@@ -1,17 +1,70 @@
-
-	<!-- Menu Side Bar -->
-       <div id="col-sm-4 col-xs-4 col-lg-4">
-            <ul class="nav nav-pills nav-stacked">
-			  <li role="presentation" class="active"><a href="#">Home</a></li>
-			  <li role="presentation"><a href="#">Profile</a></li>
-			  <li role="presentation"><a href="#">Messages</a></li>
-			</ul>
-       </div>
-	
-		<!-- Main Container -->
-		<div id="col-sm-8 col-xs-8 col-lg-8">
-          <h1>Simple Sidebar</h1>
-          <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
-          <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-      	</div>  	
-
+<div>
+	<div class="row">
+		   <!--Related Products Bar -->
+	       <div class="col-xs-2 col-sm-2 col-lg-2">
+	           <div class="row product_option" id="prdImgs"></div>
+	       </div>
+			<!-- Main Container -->
+			<div class="col-xs-10 col-sm-10 col-lg-10">
+				<div class="row">
+					<div class="col-xs-6 col-sm-6 col-lg-6">
+						 <h1>Simple Product</h1>
+						 <a href="/EmarketWeb/content/{{merchant.merchantCode.mcc}}/{{merchant.mcId}}/{{id}}/{{img}}" class="zoom" id="largeImg">
+						 	<img src="/EmarketWeb/content/{{merchant.merchantCode.mcc}}/{{merchant.mcId}}/{{id}}/{{img}}" alt="Product {{name}}" id='prodImg'/>
+						 </a>
+						 
+					</div>
+					<div class="col-xs-6 col-sm-6 col-lg-6">
+						<h3>Product : {{name}}</h3>
+						<h3>Seller : {{name}}</h3>
+						<h4>ID : {{id}} </h4>
+						<p> <strong> COLOR : </strong><input type="color"/></p>
+						<p> <strong> SIZE : </strong>
+							<select id="itemSize">
+								<option value="S">S</option>
+								<option value="M">M</option>
+								<option value="L">L</option>
+							</select>
+						</p>
+						<p> <strong> QUANTITY : </strong><input type="text" value="1" id="quantity" size="5"/> </p>
+						<p> <strong> STOCK : </strong> 4 </p>
+						<hr/>
+						<h3>Price : <strong>{{price}}</strong> USD</h3>
+						<div class="btn-group" role="group">
+							<button type="button" class="btn btn-default">Add to Cart</button>
+							<button type="button" class="btn btn-default">Buy it Now</button>
+						</div>
+						<div class="social_group">
+							<a target="_blank" title="follow me on facebook" href="http://www.facebook.com/PLACEHOLDER">
+								<img alt="follow me on facebook" src="css/img/social/facebook30x30.png" border=0>
+							</a>
+							<a target="_blank" title="follow me on instagram" href="http://www.instagram.com/PLACEHOLDER">
+								<img alt="follow me on instagram" src="css/img/social/instagram30x30.png" border=0>
+							</a>
+							<a target="_blank" title="follow me on google plus" href="https://www.twitter.com/PLACEHOLDER">
+								<img alt="follow me on google plus" src="css/img/social/twiiter30x30.png" border=0>
+							</a>
+							<a target="_blank" title="follow me on pinterest" href="http://www.pinterest.com/PLACEHOLDER">
+							<img alt="follow me on pinterest" src="css/img/social/pinterest30x30.png" border=0></a>
+						</div>
+						<p>
+							{{shDes}}
+						</p>
+					</div>
+				</div>
+				
+	          	<p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+	          	<p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+	      		<div>
+	      			<h2>Related Product</h2>
+	      			<hr/>
+	      			<div class="row" id="relatedItem"></div>
+	      		</div>
+	      		<div>
+	      			<h2>Customer Reviews</h2>
+	      			<hr/>
+	      			<div class="row" id="custReview"></div>
+	      		</div>
+	      	</div>  	
+	</div>
+</div>

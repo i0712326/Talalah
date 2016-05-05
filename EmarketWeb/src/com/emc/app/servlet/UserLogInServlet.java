@@ -39,6 +39,8 @@ public class UserLogInServlet extends HttpServlet {
 		customer.setEmail(email);
 		customer.setPasswd(passwd);
 		
+		//RestTemplate restTemplate = new RestTemplate();
+		/*
 		ObjectMapper objectMapper = new ObjectMapper();
 		String jsonCustomer = objectMapper.writeValueAsString(customer);
 		StringEntity params = new StringEntity(jsonCustomer);
@@ -68,7 +70,7 @@ public class UserLogInServlet extends HttpServlet {
 		} else {
 			request.getRequestDispatcher("auth/error.jsp").forward(request, response);
 		}
-		
+		*/
 	}
 
 }

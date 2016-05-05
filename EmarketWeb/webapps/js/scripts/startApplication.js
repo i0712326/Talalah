@@ -36,6 +36,10 @@ requirejs.config({
         verify:{
         	deps:['jquery'],
         	exports:'Verify'
+        },
+        easy_zoom:{
+        	deps:['jquery'],
+        	exports:'easyZoom'
         }
     }
 });

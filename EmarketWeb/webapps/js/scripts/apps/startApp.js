@@ -1,14 +1,16 @@
 /**
  * 
  */
-define(['jquery', 'underscore', 'backbone','handlebars','/EmarketWeb/js/scripts/apps/coreApplication.js',
+define(['jquery', 'underscore', 'backbone','handlebars',
+        '/EmarketWeb/js/scripts/apps/coreApplication.js',        
         'text!/EmarketWeb/template/home/home.html',
         'text!/EmarketWeb/template/travel/travel.html',
         'text!/EmarketWeb/template/fashion/fashion.html',
         'text!/EmarketWeb/template/living/living.html',
         'text!/EmarketWeb/template/contact/contact.html',
-        'text!/EmarketWeb/template/product/detail.html'],
-function($, _, Backbone, Handlebars, app, home, travel, fashion, living, contact, detail) {
+        'text!/EmarketWeb/template/product/detail.html',
+        'text!/EmarketWeb/template/product/productSearch.html'],
+function($, _, Backbone, Handlebars, app, home, travel, fashion, living, contact, detail, searchProd) {
 	
 	/****
 	 * 
@@ -20,8 +22,24 @@ function($, _, Backbone, Handlebars, app, home, travel, fashion, living, contact
 		initialize: function(){
 			$('#searchItem').on('click', function(e){
 				var keyVal = $('#itemSearchVal').val().trim();
-				if(key.trim()!==""){
-					
+				if(keyVal.trim()!==""){
+					$('#pageContent').empty();
+					$('#pageContent').html($(searchProd).html());
+					app.searchDashView(keyVal);
+					// add action for dash view options
+					$('#dashItems').on('click', function(e){
+						$('#searchContent').empty();
+						$('#listItems').removeClass('active');
+						$('#dashItems').addClass('active');
+						app.searchDashView(keyVal);
+					});
+					// add action for list view options
+					$('#listItems').on('click', function(e){
+						$('#searchContent').empty();
+						$('#dashItems').removeClass('active');
+						$('#listItems').addClass('active');
+						app.searchListView(keyVal);
+					});
 				}
 			});
 		},
@@ -32,7 +50,7 @@ function($, _, Backbone, Handlebars, app, home, travel, fashion, living, contact
 			'Fashion' : 'fashion',
 			'Living' : 'living',
 			'Contact' : 'info',
-			'Product/:mc/:id':'getProduct'
+			'Product/:mcc/:mcId/:id':'getProduct'
 		},
 		index : function() {
 			$('.nav li').removeClass('active');
@@ -69,8 +87,8 @@ function($, _, Backbone, Handlebars, app, home, travel, fashion, living, contact
 			$('#pageContent').append($(contact).html());
 			//app.fetchInfo();
 		},
-		getProduct:function(mc, id){
-			app.getProduct(mc,id);
+		getProduct:function(mcc, mcId, pid){
+			app.getProduct(mcc, mcId, pid);
 		}
 	});
 	

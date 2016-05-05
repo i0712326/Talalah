@@ -83,10 +83,10 @@
     
     <!-- Page Content -->
     <div class="container">
-    	<div class="col-sm-8 col-lg-8 col-md-8" id="container"></div>
-    	<div class="col-sm-4 col-lg-4 col-md-4" id="advertise">
+    	<div class="row" id="container"></div>
+    	<!-- <div class="col-sm-4 col-lg-4 col-md-4" id="advertise">
     		<img alt="" src="/EmarketWeb/css/img/ads/ad02.jpg">
-    	</div>
+    	</div> -->
     </div>
     <!-- /.container -->
     <div class="container">
